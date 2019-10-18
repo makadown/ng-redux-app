@@ -1,7 +1,7 @@
 <div class="row text-center">
   <div class="col">
     <h1>Contador</h1>
-    <h2> {{ contador }}</h2>
+    <h2> {{ contador$ | async }}</h2>
   </div>
 </div>
 
@@ -11,7 +11,7 @@
     <button class="btn btn-info" (click)="decrementar()">Decrementar</button>
   </div>
 </div>
-
+<!-- 
 <hr>
 
 <div class="row text-center">
@@ -20,4 +20,4 @@
 
     </app-hijo>
   </div>
-</div>
+</div> -->
