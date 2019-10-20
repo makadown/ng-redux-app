@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { incrementar, decrementar, reset } from './contador/contador.actions';
-import { AppState } from './AppState';
+import { AppState } from './app-state';
 
 @Component({
   selector: 'app-root',
@@ -16,16 +16,10 @@ export class AppComponent {
   }
 
   incrementar() {
-    // this.contador++;
     this.store.dispatch(incrementar());
   }
 
   decrementar() {
-    // this.contador--;
     this.store.dispatch(decrementar());
-  }
-
-  reset() {
-    this.store.dispatch(reset());
   }
 }
